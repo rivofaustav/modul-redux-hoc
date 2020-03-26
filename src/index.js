@@ -10,6 +10,7 @@ import * as serviceWorker from './serviceWorker';
 const rootReducer = combineReducers({
  form: formReducer,
 });
+
 const store = createStore(rootReducer);
 ReactDOM.render(
  <Provider store={store}>

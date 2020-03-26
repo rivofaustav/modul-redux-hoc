@@ -2,24 +2,28 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import logo from './logo.svg';
 import './App.css';
+
 let SignInForm = props => {
  const { handleSubmit } = props;
  return <form onSubmit={handleSubmit} className="form">
- <div className="field">
- <div className="control">
- <Field name="firstName" component={renderField} type="text" label="First Name"/>
- </div>
- </div>
- <div className="field">
- <div className="control">
- <Field name="lastName" component={renderField} type="text" label="Last Name"/>
- </div>
- </div>
- <div className="field">
- <div className="control">
- <Field name="email" component={renderField} type="email" label="Email Address"/>
- </div>
- </div>
+  <div className="field">
+    <div className="control">
+      <Field name="firstName" component={renderField} type="text" label="First Name"/>
+    </div>
+  </div>
+
+  <div className="field">
+    <div className="control">
+      <Field name="lastName" component={renderField} type="text" label="Last Name"/>
+    </div>
+  </div>
+
+  <div className="field">
+    <div className="control">
+      <Field name="email" component={renderField} type="email" label="Email Address"/>
+    </div>
+  </div>
+  
  <div className="field">
  <div className="control">
  <Field name="age" component={renderField} type="number" label="Age"/>
